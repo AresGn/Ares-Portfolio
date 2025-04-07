@@ -1,0 +1,212 @@
+{
+  "en": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "experience": "Experience",
+      "works": "Works",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "home": {
+      "iama": "I'm a",
+      "roles": ["UI/UX designer", "Web Developer", "Flutter Mobile Developer", "Motion Designer"],
+      "hireMe": "Hire me"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am Ares GNIMAGNON, a passionate digital creator from Benin. I specialize in creating beautiful and functional digital experiences through UI/UX design, web development, and mobile app development with Flutter. With a keen eye for design and strong technical skills, I help businesses and individuals bring their digital visions to life.",
+      "downloadCV": "Download CV",
+      "skills": {
+        "webDev": "Web Development",
+        "uiux": "UI/UX design",
+        "flutter": "Flutter Development",
+        "motion": "Motion Design"
+      },
+      "facts": {
+        "completed": "Projects completed",
+        "active": "Active projects",
+        "clients": "Satisfied clients",
+        "experience": "Years experience"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Creating intuitive and engaging user experiences using Figma. From wireframes to interactive prototypes, I design user-centered interfaces that combine aesthetics with functionality for web and mobile applications."
+      },
+      "webDev": {
+        "title": "Web Development",
+        "description": "Building responsive and dynamic websites using modern technologies. From personal portfolios to e-commerce platforms, I deliver clean, efficient, and scalable web solutions that drive business growth."
+      },
+      "appDev": {
+        "title": "App Development",
+        "description": "Developing cross-platform mobile applications with Flutter. I create beautiful, high-performance apps that work seamlessly on both iOS and Android, delivering native-like experiences with a single codebase."
+      },
+      "motionDesign": {
+        "title": "Motion Design",
+        "description": "Creating engaging animations and visual effects that bring content to life. I combine technical skills with artistic vision to produce captivating motion graphics for websites, apps, and digital marketing."
+      },
+      "lookingCustomJob": "Looking for a custom job?",
+      "clickHere": "Click here",
+      "toContactMe": "to contact me!"
+    },
+    "experience": {
+      "title": "Experience",
+      "education": {
+        "insti": {
+          "date": "2022 - Present",
+          "title": "INSTI Lokossa",
+          "description": "3rd Year Student in Electrical Engineering and Computer Science"
+        },
+        "bac": {
+          "date": "2021",
+          "title": "Complexe Scolaire la Plénitude de GODOMEY",
+          "description": "Scientific Baccalaureate (Series C)"
+        }
+      },
+      "professional": {
+        "windows": {
+          "date": "2025",
+          "title": "Windows Application",
+          "description": "Development of a Windows application for automatic data backup"
+        },
+        "website": {
+          "date": "2025",
+          "title": "Website Redesign",
+          "description": "Redesign of INSTI's presentation website (National Institute of Industrial Sciences and Technologies)"
+        },
+        "mobile": {
+          "date": "2024",
+          "title": "Mobile App 'Nuxixo'",
+          "description": "Development of a mobile application dedicated to traditional music, built with Flutter"
+        },
+        "elevator": {
+          "date": "2022",
+          "title": "CITECHSARL Abomey-Calavi",
+          "description": "Development of a C++ control system for a 3-floor elevator, reducing waiting times by 15%"
+        }
+      }
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "letsTalk": "Let's talk about everything!",
+      "dontLikeForms": "Don't like forms? Send me an",
+      "email": "email",
+      "sendMessage": "Send Message",
+      "form": {
+        "name": "Your name",
+        "email": "Email address",
+        "subject": "Subject",
+        "message": "Message"
+      }
+    }
+  },
+  "fr": {
+    "menu": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "experience": "Expérience",
+      "works": "Travaux",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "home": {
+      "iama": "Je suis",
+      "roles": ["Designer UI/UX", "Développeur Web", "Développeur Mobile Flutter", "Motion Designer"],
+      "hireMe": "Engagez-moi"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "description": "Je suis Arès GNIMAGNON, un créateur numérique passionné du Bénin. Je me spécialise dans la création d'expériences numériques belles et fonctionnelles à travers le design UI/UX, le développement web et le développement d'applications mobiles avec Flutter. Avec un œil attentif pour le design et de solides compétences techniques, j'aide les entreprises et les particuliers à donner vie à leurs visions numériques.",
+      "downloadCV": "Télécharger CV",
+      "skills": {
+        "webDev": "Développement Web",
+        "uiux": "Design UI/UX",
+        "flutter": "Développement Flutter",
+        "motion": "Motion Design"
+      },
+      "facts": {
+        "completed": "Projets terminés",
+        "active": "Projets actifs",
+        "clients": "Clients satisfaits",
+        "experience": "Années d'expérience"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "uiux": {
+        "title": "Design UI/UX",
+        "description": "Création d'expériences utilisateur intuitives et engageantes avec Figma. Des wireframes aux prototypes interactifs, je conçois des interfaces centrées sur l'utilisateur qui allient esthétique et fonctionnalité pour les applications web et mobiles."
+      },
+      "webDev": {
+        "title": "Développement Web",
+        "description": "Construction de sites web réactifs et dynamiques utilisant des technologies modernes. Des portfolios personnels aux plateformes e-commerce, je livre des solutions web propres, efficaces et évolutives qui favorisent la croissance des entreprises."
+      },
+      "appDev": {
+        "title": "Développement d'Applications",
+        "description": "Développement d'applications mobiles multi-plateformes avec Flutter. Je crée des applications belles et performantes qui fonctionnent parfaitement sur iOS et Android, offrant des expériences similaires aux applications natives avec une seule base de code."
+      },
+      "motionDesign": {
+        "title": "Motion Design",
+        "description": "Création d'animations et d'effets visuels engageants qui donnent vie au contenu. Je combine compétences techniques et vision artistique pour produire des graphiques animés captivants pour sites web, applications et marketing numérique."
+      },
+      "lookingCustomJob": "Vous cherchez un travail personnalisé?",
+      "clickHere": "Cliquez ici",
+      "toContactMe": "pour me contacter!"
+    },
+    "experience": {
+      "title": "Expérience",
+      "education": {
+        "insti": {
+          "date": "2022 - Présent",
+          "title": "INSTI Lokossa",
+          "description": "Étudiant en 3ème Année Génie Électrique et Informatique"
+        },
+        "bac": {
+          "date": "2021",
+          "title": "Complexe Scolaire la Plénitude de GODOMEY",
+          "description": "Baccalauréat série C"
+        }
+      },
+      "professional": {
+        "windows": {
+          "date": "2025",
+          "title": "Application Windows",
+          "description": "Développement d'une application Windows pour la sauvegarde automatique de données"
+        },
+        "website": {
+          "date": "2025",
+          "title": "Refonte de site web",
+          "description": "Refonte du site web de présentation de l'INSTI (Institut National des Sciences et Techniques Industrielles)"
+        },
+        "mobile": {
+          "date": "2024",
+          "title": "Application mobile 'Nuxixo'",
+          "description": "Développement d'une application mobile dédiée à la musique traditionnelle, réalisée avec Flutter"
+        },
+        "elevator": {
+          "date": "2022",
+          "title": "CITECHSARL Abomey-Calavi",
+          "description": "Développement en C++ du système de contrôle d'un ascenseur 3 étages, réduisant les temps d'attente de 15%"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "letsTalk": "Parlons de tout!",
+      "dontLikeForms": "Vous n'aimez pas les formulaires? Envoyez-moi un",
+      "email": "email",
+      "sendMessage": "Envoyer Message",
+      "form": {
+        "name": "Votre nom",
+        "email": "Adresse email",
+        "subject": "Sujet",
+        "message": "Message"
+      }
+    }
+  }
+} 

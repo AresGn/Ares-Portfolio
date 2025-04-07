@@ -65,11 +65,20 @@
     <header class="mobile-header-1">
         <div class="container">
             <!-- menu icon -->
-            <div class="menu-icon d-inline-flex me-4">
+            <div class="menu-icon d-inline-flex me-3">
                 <button>
                     <span></span>
                 </button>
             </div>
+            
+            <!-- language selector (mobile) -->
+            <div class="language-selector-mobile me-3">
+                <select id="language-select-mobile" class="form-select bg-dark text-light border-0">
+                    <option value="en" selected>EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+            
             <!-- logo image -->
             <div class="site-logo">
                 <a href="index-dark.html">
@@ -87,6 +96,14 @@
             <a href="index-dark.html">
                 <img src="images/logo.svg" alt="Bolby" />
             </a>
+        </div>
+
+        <!-- language selector -->
+        <div class="language-selector mt-3 mb-3">
+            <select id="language-select" class="form-select bg-dark text-light border-0">
+                <option value="en" selected>English</option>
+                <option value="fr">Français</option>
+            </select>
         </div>
 
         <!-- main menu -->
@@ -254,7 +271,7 @@
                                     <!-- about text -->
                                     <p>I am Ares GNIMAGNON, a passionate digital creator from Benin. I specialize in creating beautiful and functional digital experiences through UI/UX design, web development, and mobile app development with Flutter. With a keen eye for design and strong technical skills, I help businesses and individuals bring their digital visions to life.</p>
                                     <div class="mt-3">
-                                        <a href="#" class="btn btn-default">Download CV</a>
+                                        <a href="/GNIMAGNON_Arès.pdf" class="btn btn-default">Download CV</a>
                                     </div>
                                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                                 </div>
@@ -464,83 +481,66 @@
                             <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp">
                                 <div class="content">
-                                    <span class="time">2019 - Present</span>
-                                    <h3 class="title">Academic Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
+                                    <span class="time">2022 - Present</span>
+                                    <h3 class="title">INSTI Lokossa</h3>
+                                    <p>3rd Year Student in Electrical Engineering and Computer Science</p>
                                 </div>
                             </div>
 
                             <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="content">
-                                    <span class="time">2017 - 2013</span>
-                                    <h3 class="title">Bachelor's Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
+                                    <span class="time">2021</span>
+                                    <h3 class="title">Complexe Scolaire la Plénitude de GODOMEY</h3>
+                                    <p>Scientific Baccalaureate (Series C)</p>
                                 </div>
                             </div>
-
-                            <!-- timeline item -->
-                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="content">
-                                    <span class="time">2013 - 2009</span>
-                                    <h3 class="title">Honours Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- main line -->
-                            <span class="line"></span>
 
                         </div>
 
                     </div>
 
                     <div class="col-md-6">
-
-                        <!-- responsive spacer -->
-                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-
                         <!-- timeline wrapper -->
                         <div class="timeline exp bg-dark rounded shadow-light padding-30 overflow-hidden">
 
                             <!-- timeline item -->
-                            <div class="timeline-container wow fadeInUp">
-                                <div class="content">
-                                    <span class="time">2019 - Present</span>
-                                    <h3 class="title">Web Designer</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="content">
-                                    <span class="time">2017 - 2013</span>
-                                    <h3 class="title">Front-End Developer</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
+                                    <span class="time">2025</span>
+                                    <h3 class="title">Windows Application</h3>
+                                    <p>Development of a Windows application for automatic data backup</p>
                                 </div>
                             </div>
 
                             <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="content">
-                                    <span class="time">2013 - 2009</span>
-                                    <h3 class="title">Back-End Developer</h3>
-                                    <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                    </p>
+                                    <span class="time">2025</span>
+                                    <h3 class="title">Website Redesign</h3>
+                                    <p>Redesign of INSTI's presentation website (National Institute of Industrial Sciences and Technologies)</p>
                                 </div>
                             </div>
 
-                            <!-- main line -->
-                            <span class="line"></span>
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="content">
+                                    <span class="time">2024</span>
+                                    <h3 class="title">Mobile App 'Nuxixo'</h3>
+                                    <p>Development of a mobile application dedicated to traditional music, built with Flutter</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="content">
+                                    <span class="time">2022</span>
+                                    <h3 class="title">CITECHSARL Abomey-Calavi</h3>
+                                    <p>Development of a C++ control system for a 3-floor elevator, reducing waiting times by 15%</p>
+                                </div>
+                            </div>
 
                         </div>
-
                     </div>
 
                 </div>
@@ -1067,6 +1067,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/language-switcher.js"></script>
 
 </body>
 
