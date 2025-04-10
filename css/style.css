@@ -658,65 +658,146 @@ header.mobile-header-1 {
   background: #353353;
   display: none;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header.mobile-header-1.open {
-  -webkit-transform: translateX(290px);
-  -ms-transform: translateX(290px);
-  transform: translateX(290px);
-}
-header.mobile-header-1 .menu-icon button {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: 0;
-  height: 33px;
-  width: 33px;
-}
-header.mobile-header-1 .menu-icon span {
-  display: block;
-  background: #FFF;
-  border-radius: 5px;
-  height: 4px;
-  position: relative;
-  width: 30px;
-}
-header.mobile-header-1 .menu-icon span:before {
-  content: "";
-  display: block;
-  background: #FFF;
-  border-radius: 5px;
-  height: 4px;
-  top: -10px;
-  position: absolute;
-  width: 30px;
-}
-header.mobile-header-1 .menu-icon span:after {
-  content: "";
-  display: block;
-  background: #FFF;
-  border-radius: 5px;
-  height: 4px;
-  top: 10px;
-  position: absolute;
-  width: 30px;
-}
-header.mobile-header-1 .site-logo {
+
+/* Style du bouton hamburger */
+.menu-icon {
   display: inline-block;
+  cursor: pointer;
+  padding: 10px;
 }
-header.mobile-header-1 .site-logo img {
+
+.menu-icon button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:first-child {
+  top: 6px;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 14px;
+}
+
+.menu-icon span:last-child {
+  top: 22px;
+}
+
+body.menu-open .menu-icon span:first-child {
+  transform: rotate(45deg);
+  top: 14px;
+}
+
+body.menu-open .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+body.menu-open .menu-icon span:last-child {
+  transform: rotate(-45deg);
+  top: 14px;
+}
+
+/* Styles pour le menu mobile */
+.mobile-menu-content {
+  position: fixed;
+  top: 0;
+  left: -290px;
+  width: 290px;
+  height: 100%;
+  background: #353353;
+  z-index: 998;
+  padding: 25px;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-content.open {
+  left: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-content .site-logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mobile-menu-content .site-logo img {
   max-height: 30px;
 }
-header.mobile-header-1.light {
-  background: #F9F9FF;
+
+.mobile-menu-content .language-selector-mobile {
+  margin-bottom: 30px;
+  text-align: center;
 }
-header.mobile-header-1.light .menu-icon span {
-  background: #353353;
+
+.mobile-menu-content .vertical-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-header.mobile-header-1.light .menu-icon span:before, header.mobile-header-1.light .menu-icon span:after {
-  background: #353353;
+
+.mobile-menu-content .vertical-menu li {
+  margin-bottom: 15px;
+}
+
+.mobile-menu-content .vertical-menu li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mobile-menu-content .vertical-menu li i {
+  margin-right: 15px;
+  color: #FFD15C;
+  font-size: 18px;
+}
+
+.mobile-menu-content .vertical-menu li.active a {
+  color: #FFD15C;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  header.mobile-header-1 {
+    display: block;
+  }
+  
+  main.content {
+    margin-top: 60px;
+    margin-left: 0;
+  }
 }
 
 header.mobile-header-2 {
@@ -2631,7 +2712,9 @@ body {
   }
 
   header.mobile-header-1 {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   main.content {
@@ -2808,4 +2891,14 @@ body {
   header.desktop-header-2 .footer {
     margin-top: 100px;
   }
+}
+
+/* Cacher le sélecteur de langue en mode mobile par défaut */
+.language-selector-mobile {
+  display: inline-block;
+}
+
+/* Masquer le sélecteur quand le menu est ouvert pour éviter la duplication */
+header.mobile-header-1.open .language-selector-mobile {
+  display: none;
 }
