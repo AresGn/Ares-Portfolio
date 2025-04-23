@@ -1408,10 +1408,11 @@ select.portfolio-filter-mobile {
   font-size: 20px;
 }
 .blog-item .details h4.title a {
-  color: #353353;
+  color: #44D7B6;
+  transition: color 0.3s ease;
 }
 .blog-item .details h4.title a:hover {
-  color: #FF4C60;
+  color: #6AEAD1;
 }
 .blog-item .meta {
   font-size: 14px;
@@ -1447,10 +1448,11 @@ select.portfolio-filter-mobile {
   font-size: 30px;
 }
 .blog-page-section .blog-text-title h4 a {
-  color: #454360;
+  color: #44D7B6;
+  transition: color 0.3s ease;
 }
 .blog-page-section .blog-text-title h4 a:hover {
-  color: #FF4C60;
+  color: #6AEAD1;
 }
 .blog-page-section .blog-pagination {
   margin: 60px 0px 40px;
@@ -1511,7 +1513,7 @@ select.portfolio-filter-mobile {
   overflow: hidden;
   line-height: 1;
   padding: 12px 32px;
-  color: #fff;
+  color: #44D7B6;
   background: #ff4c60;
   display: inline-block;
   vertical-align: middle;
@@ -1520,9 +1522,10 @@ select.portfolio-filter-mobile {
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: color 0.3s ease;
 }
 .blog-page-section .br-more a:hover {
-  color: #fff;
+  color: #6AEAD1;
   -webkit-animation-name: button-push;
   animation-name: button-push;
   -webkit-animation-duration: 0.3s;
@@ -1907,10 +1910,11 @@ body.dark .portfolio-filter li.current {
   color: #FF4C60;
 }
 body.dark .blog-item .details h4.title a {
-  color: #FFF;
+  color: #44D7B6;
+  transition: color 0.3s ease;
 }
 body.dark .blog-item .details h4.title a:hover {
-  color: #FF4C60;
+  color: #6AEAD1;
 }
 body.dark .contact-info {
   background-image: url("../images/map-light.png");
@@ -2901,4 +2905,16 @@ body {
 /* Masquer le sélecteur quand le menu est ouvert pour éviter la duplication */
 header.mobile-header-1.open .language-selector-mobile {
   display: none;
+}
+
+header.mobile-header-1 .site-logo {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+body.menu-open header.mobile-header-1 .site-logo {
+  display: inline-block; /* Ensure visibility when menu is open */
 }
